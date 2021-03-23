@@ -2,12 +2,12 @@
 #os.stat
 #os.walk
 from dirhash import dirhash
-
+import time
 import hashlib
 
 #Run through filesystem
-def flier(filename_or_directory):
-    hashEd = hasher(filename_or_directory)
+def flier(forDir):
+    hashEd = hasher(forDir)
     time = get time funciton
     return #filename, hashEd, time
 
