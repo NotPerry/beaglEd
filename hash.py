@@ -4,11 +4,10 @@
 import hashlib
 
 #Run through filesystem
-def flier():
-    getfile name
-    call hasher
-    get time
-    return csv (filename, sha2hash, time)
+def flier(filename_or_directory):
+    hashEd = hasher(filename_or_directory)
+    time = get time funciton
+    return [filename, hashEd, time]
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
 def hasher(filename_or_directory):
