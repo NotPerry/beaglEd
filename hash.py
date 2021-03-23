@@ -30,6 +30,13 @@ def main
 #   any missing files, and 
 #   any file that was modified.
 
+def compare():
+    import glob
+    import os
+    file = glob.glob("*.ipynb")
+    file.sort(key=os.path.getmtime)
+    This will list the most recent file, we could use this to find our most recent baseline to compare our data to
+
 #Extra Credit
 #Goal: Detect that a file was moved
 #Add to your summary section an output that documents 
