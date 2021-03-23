@@ -1,0 +1,7 @@
+/dev
+/proc
+/run
+/sys
+/tmp
+/var/lib
+/var/run
