@@ -13,7 +13,7 @@ def flier(filename_or_directory):
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
 def hasher(path):
-    dir_md5 = dirhash(dirpath, "md5")
+    dir_md5 = dirhash(path, "md5")
     return dir_md5
 
 #Need:
