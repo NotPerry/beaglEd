@@ -5,15 +5,24 @@ import hashlib
 
 #Run through filesystem
 def flier():
+    getfile name
+    call hasher
+    get time
+    return csv (filename, sha2hash, time)
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
-def hasher():
-  
+def hasher(filename_or_directory):
+    #hash it
+    return #hash
 
 #Need:
 #   Filename with full path
 #   Hash
 #   date/time file was observed
+
+def main
+    call flier
+    write contents to file
 
 #run and update the hash information, upon completion it should print out summary information that includes 
 #   all new files found, 
