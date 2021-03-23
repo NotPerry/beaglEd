@@ -1,6 +1,8 @@
 #os.listdir
 #os.stat
 #os.walk
+from dirhash import dirhash
+
 import hashlib
 
 #Run through filesystem
@@ -10,10 +12,9 @@ def flier(filename_or_directory):
     return #filename, hashEd, time
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
-def hasher(filename_or_directory):
-    #hash it
-    m = hashlib.sha256()
-    return #hash
+def hasher(path):
+    dir_md5 = dirhash(dirpath, "md5")
+    return dir_md5
 
 #Need:
 #   Filename with full path
