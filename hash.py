@@ -38,11 +38,30 @@ def main
 #   any file that was modified.
 
 def compare():
+    '''
     import glob
     import os
     file = glob.glob("*.ipynb")
     file.sort(key=os.path.getmtime)
     This will list the most recent file, we could use this to find our most recent baseline to compare our data to
+    old_fd.lseek(0)
+    new_fd.lseek(0)
+'''
+    for x in range(0, len(new_fd)):
+        buff = []
+        if new_fd[x] not in old_fd:
+            #color green
+            print("Change detected {}: {} {}".format(buff[2], buff[0], buff[1]))
+
+    for x in range(0, len(old_fd):
+        buff = []
+        buff = old_fd[x].split(",")
+
+        if buff[1] not in new_fd:
+        #color red
+            print("Change detected {}: {} {} ".format(get_time, buff[0], buff[1]))
+
+
 
 #Extra Credit
 #Goal: Detect that a file was moved
