@@ -28,6 +28,10 @@ def main
     call flier
     write contents to file
 
+    for root, dirs, files in os.walk("."):
+        
+
+
 #run and update the hash information, upon completion it should print out summary information that includes 
 #   all new files found, 
 #   any missing files, and 
