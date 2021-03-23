@@ -7,11 +7,12 @@ import hashlib
 def flier(filename_or_directory):
     hashEd = hasher(filename_or_directory)
     time = get time funciton
-    return [filename, hashEd, time]
+    return #filename, hashEd, time
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
 def hasher(filename_or_directory):
     #hash it
+    m = hashlib.sha256()
     return #hash
 
 #Need:
