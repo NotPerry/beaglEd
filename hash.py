@@ -13,8 +13,8 @@ def flier(forDir):
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
 def hasher(path):
-    dir_md5 = dirhash(dirpath, "md5")
-    return dir_md5
+    dir_sha256 = dirhash(path, "sha256")
+    return dir_sha256
 
 #Need:
 #   Filename with full path
@@ -29,6 +29,13 @@ def main
 #   all new files found, 
 #   any missing files, and 
 #   any file that was modified.
+
+def compare():
+    import glob
+    import os
+    file = glob.glob("*.ipynb")
+    file.sort(key=os.path.getmtime)
+    This will list the most recent file, we could use this to find our most recent baseline to compare our data to
 
 #Extra Credit
 #Goal: Detect that a file was moved
