@@ -4,6 +4,7 @@
 from dirhash import dirhash
 import time
 import hashlib
+import os
 
 #Run through filesystem
 def flier(forDir):
@@ -20,6 +21,8 @@ def hasher(path):
 #   Filename with full path
 #   Hash
 #   date/time file was observed
+
+
 
 def main
     call flier
