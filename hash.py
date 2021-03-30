@@ -9,7 +9,7 @@ import os
 #Run through filesystem
 def flier(forDir):
     hashEd = hasher(forDir)
-    time = get time funciton
+    #time = get time funciton
     return #filename, hashEd, time
 
 #Use SHA2 (SHA256) so that each file is hashed as it moves through the file system
@@ -24,13 +24,29 @@ def hasher(path):
 
 
 
-def main
-    call flier
-    write contents to file
-
+def main():
+    #call flier
+    #write contents to file
+    string = ""
     for root, dirs, files in os.walk("."):
-        
-
+        for name in root:
+            try:
+                dir_sha256 = dirhash(root, "sha256")
+                string += root + "\t\t\t" + dir_sha265 + "\n"
+            except:
+                string += root+name+"\n"
+        for name in files:
+            try:
+                f = open(os.path.join(root, name), "r")
+                contents = f.read()
+                f.close()
+                m = hashlib.sha256()
+                m.update(contents)
+                hsh = m.hexdigest()
+                string += os.path.join(root, name) + "\t\t\t" + hsh + "\n"
+            except:
+                string += root + name + "\n"
+    print(string)
 
 #run and update the hash information, upon completion it should print out summary information that includes 
 #   all new files found, 
@@ -53,7 +69,7 @@ def compare():
             #color green
             print("Change detected {}: {} {}".format(buff[2], buff[0], buff[1]))
 
-    for x in range(0, len(old_fd):
+    for x in range(0, len(old_fd)):
         buff = []
         buff = old_fd[x].split(",")
 
@@ -69,3 +85,7 @@ def compare():
 #   where the file is now, and 
 #   where it was, and 
 #   the time of the last scan that saw it in the older location.
+
+
+if __name__ == "__main__":
+    main()
