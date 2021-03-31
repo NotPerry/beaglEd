@@ -1,0 +1,20 @@
+Eddy,
+
+While I was going through making the first half, I found some things that may be helpful:
+
+How to read from csv file into a dictionary:
+csv.DictReader
+https://docs.python.org/3/library/csv.html#module-csv
+
+How to find differences in two csv files:
+https://stackoverflow.com/questions/38996033/python-compare-two-csv-files-and-print-out-differences/38996349
+
+Another way to do it:
+https://pypi.org/project/csv-diff/
+
+
+
+We all code differently, so don't feel obligated to use them, just thought they could save you time!
+
+V/r,
+-AP
