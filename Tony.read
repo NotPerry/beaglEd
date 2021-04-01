@@ -13,3 +13,12 @@ You can take away the comments for the print. This just takes a LONG time to fin
 csv files are writted into "./sys/foo"
 
 you could provide complete.py with a argument for a cvs file thats already written that you would like to compare the systems currect state to. 
+
+
+
+
+"changes.log"
+
+"FieSys_03312021_192512.tar.xz"
+
+"errorFile03312021_190416"
