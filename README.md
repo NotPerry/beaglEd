@@ -34,7 +34,3 @@ Store the file and hash information so that it will be available for future runs
 1. Your [hashing script](./hash.py)
 2. The file in which you stored all of the [hash data](FieSys_03312021_192512.tar.xz)
 3. A file that explains how you stored the data in the hash data file called [README](./README.txt)
-      
-(If you completed the extra credit, make sure to note that in your README.TXT file.)
-
-
