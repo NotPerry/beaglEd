@@ -1,0 +1,15 @@
+This uses a hash algorithm found here to help avoid unreadable bytes: https://stackoverflow.com/questions/22058048/hashing-a-file-in-python
+
+Excludes directories using this: https://stackoverflow.com/questions/19859840/excluding-directories-in-os-walk
+
+I need to run the "var" directories seperate in order to exclude the required subdirectories in "/var"
+
+Need to be run as root
+
+writes changes into "./log/changes.log"
+
+You can take away the comments for the print. This just takes a LONG time to find changes. 
+
+csv files are writted into "./sys/foo"
+
+you could provide complete.py with a argument for a cvs file thats already written that you would like to compare the systems currect state to. 
