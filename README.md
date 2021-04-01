@@ -30,9 +30,9 @@ Store the file and hash information so that it will be available for future runs
 
 Deliverables:
 
-1. Your hashing script (./hash.py)
-2. The file in which you stored all of the hash data (./FileSys_03312021_192512.tar.xz)
-3. A README.TXT file that explains how you stored the data in the hash data file. (./README.txt)
+1. Your [hashing script] (./hash.py)
+2. The file in which you stored all of the [hash data] (./FileSys_03312021_192512.tar.xz)
+3. A [README] file that explains how you stored the data in the hash data file. (./README.txt)
       a. If you completed the extra credit, make sure to note that in your README.TXT file.
 
 
