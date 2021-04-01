@@ -1,0 +1,7 @@
+This uses a hash algorithm found here to help avoid unreadable bytes: https://stackoverflow.com/questions/22058048/hashing-a-file-in-python
+
+Need to be run as root
+
+writes changes into "./log/changes.log"
+
+csv files are writted into "./sys/foo"
