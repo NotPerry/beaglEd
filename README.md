@@ -1,6 +1,6 @@
 # beaglEd
 
-This code was a Project for SY402: Lab 8.  
+This code was for SY402: Lab 8.  
 
 Lab Objective:
 Write software that will detect changes across the filesystem by hashing all files across your virtual machine. This is accomplished by writing a Python script that will walk through all of the directories and files on your virtual server and hash each individual file, keeping track of the hash values so that subsequent runs can make note of the changes. In essence, you are writing a software package similar to the initial tripwire software.
